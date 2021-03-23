@@ -32,7 +32,6 @@ init_language_haxe(Application_Links *app){
         PSAT("true", CPP_TOKEN_KEY_OTHER),
         PSAT("false", CPP_TOKEN_KEY_OTHER),
         PSAT("in", CPP_TOKEN_KEY_OTHER),
-        PSAT("abstract", CPP_TOKEN_KEY_OTHER),
         PSAT("inline", CPP_TOKEN_KEY_OTHER),
         PSAT("from", CPP_TOKEN_KEY_OTHER),
         PSAT("to", CPP_TOKEN_KEY_OTHER),
@@ -51,6 +50,7 @@ init_language_haxe(Application_Links *app){
         PSAT("class", CPP_TOKEN_KEY_TYPE_DECLARATION),
         PSAT("enum", CPP_TOKEN_KEY_TYPE_DECLARATION),
         PSAT("interface", CPP_TOKEN_KEY_TYPE_DECLARATION),
+        PSAT("abstract", CPP_TOKEN_KEY_TYPE_DECLARATION),
         PSAT("typedef", CPP_TOKEN_KEY_TYPE_DECLARATION),
         
         PSAT("if",      CPP_TOKEN_KEY_CONTROL_FLOW),
@@ -66,14 +66,13 @@ init_language_haxe(Application_Links *app){
         PSAT("switch",      CPP_TOKEN_KEY_CONTROL_FLOW),
         PSAT("throw",      CPP_TOKEN_KEY_CONTROL_FLOW),
         PSAT("try",      CPP_TOKEN_KEY_CONTROL_FLOW),
-        PSAT("throw",      CPP_TOKEN_KEY_CONTROL_FLOW),
         PSAT("while",      CPP_TOKEN_KEY_CONTROL_FLOW),
     };
     
     Parser_String_And_Type pp[] = {
         PSAT("if", CPP_PP_IF),
         PSAT("else", CPP_PP_ELSE),
-        PSAT("elif", CPP_PP_ELIF),
+        PSAT("elseif", CPP_PP_ELIF),
         PSAT("end", CPP_PP_ENDIF),
     };
     
